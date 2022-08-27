@@ -19,7 +19,7 @@ const App = () => {
 	const initalState = useInitialState();
 	return (
 		<AppContext.Provider value={initalState}>
-		<BrowserRouter>
+		<BrowserRouter basename="/react-shop" >
 			<Layout>
 				<Switch>
 					<Route exact path="/" component={Home} />
